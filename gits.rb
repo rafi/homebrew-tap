@@ -3,8 +3,8 @@ class Gits < Formula
   homepage "https://github.com/rafi/gits"
   head "https://github.com/rafi/gits.git"
   url "https://github.com/rafi/gits.git",
-      :tag => "v0.1.0",
-      :revision => "d588c1bc8f761127a845a8f2c60f67c5b538d09f"
+      :tag => "v0.2.0",
+      :revision => "7367f5c8e3fbc1c165ae0d1f5165ab9992a05ebb"
 
   depends_on "go" => :build
 
@@ -13,7 +13,15 @@ class Gits < Formula
 
     (buildpath/"src/github.com/rafi/gits").install buildpath.children
     cd "src/github.com/rafi/gits" do
-      system "go", "build", "-o", bin/"gits"
+      system "go", "build",
+        "-ldflags",
+        "-X github.com/rafi/gits/cmd.Version=#{version}",
+        "-o", bin/"gits"
+
+      # Install bash completion
+      output = Utils.popen_read("#{bin}/gits completion 2>/dev/null")
+      (bash_completion/"gits").write output
+
       prefix.install_metafiles
     end
   end
