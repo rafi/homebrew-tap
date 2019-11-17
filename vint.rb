@@ -3,8 +3,8 @@ class Vint < Formula
 
   desc "Fast and Highly Extensible Vim script Language Lint implemented in Python"
   homepage "https://github.com/Kuniwak/vint"
-  url "https://files.pythonhosted.org/packages/6e/16/980fdd8007889d48dfb18e71731890a06d6841a7fab95dc27debb44a74c1/vim-vint-0.3.19.tar.gz"
-  sha256 "aba8938f4c720e5c70a25f4dc7d845c5ce87aba0b778d1686f18b8da0c88f234"
+  url "https://files.pythonhosted.org/packages/9c/c7/d5fbe5f778edee83cba3aea8cc3308db327e4c161e0656e861b9cc2cb859/vim-vint-0.3.21.tar.gz"
+  sha256 "5dc59b2e5c2a746c88f5f51f3fafea3d639c6b0fdbb116bb74af27bf1c820d97"
   head "https://github.com/Kuniwak/vint.git"
 
   depends_on "python"
