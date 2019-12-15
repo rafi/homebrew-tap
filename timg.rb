@@ -10,8 +10,8 @@ class Timg < Formula
 
   def install
     cd "src" do
-      system "make"
-      system "make", "install", "PREFIX=#{prefix}"
+      system "make", "timg"
+      (prefix/"bin").install "timg"
     end
   end
 
