@@ -3,8 +3,8 @@ class Gits < Formula
   homepage "https://github.com/rafi/gits"
   head "https://github.com/rafi/gits.git"
   url "https://github.com/rafi/gits.git",
-      :tag => "v0.2.0",
-      :revision => "7367f5c8e3fbc1c165ae0d1f5165ab9992a05ebb"
+      :tag => "v0.2.1",
+      :revision => "bc8157e9138c34974344fa90a31a3fe77dff19df"
 
   depends_on "go" => :build
 
