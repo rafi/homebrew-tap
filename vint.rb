@@ -1,17 +1,18 @@
 class Vint < Formula
   include Language::Python::Virtualenv
 
-  desc "Fast and Highly Extensible Vim script Language Lint implemented in Python"
+  desc "Vim script lint implemented in python"
   homepage "https://github.com/Kuniwak/vint"
-  url "https://files.pythonhosted.org/packages/9c/c7/d5fbe5f778edee83cba3aea8cc3308db327e4c161e0656e861b9cc2cb859/vim-vint-0.3.21.tar.gz"
-  sha256 "5dc59b2e5c2a746c88f5f51f3fafea3d639c6b0fdbb116bb74af27bf1c820d97"
   head "https://github.com/Kuniwak/vint.git"
+  url "https://github.com/Kuniwak/vint.git",
+      :tag => "v0.4a4",
+      :revision => "d67d8d55e4436dca66f43a10406638a29154718a"
 
   depends_on "python"
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz"
-    sha256 "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
+    url "https://files.pythonhosted.org/packages/3d/d9/ea9816aea31beeadccd03f1f8b625ecf8f645bd66744484d162d84803ce5/PyYAML-5.3.tar.gz"
+    sha256 "e9f45bd5b92c7974e59bcd2dcc8631a6b6cc380a904725fce7bc08872e691615"
   end
 
   resource "ansicolor" do
@@ -29,5 +30,9 @@ class Vint < Formula
   end
 
   test do
+    assert_match /^Lint Vim script$/m, shell_output("#{bin}/vint -h", 0)
+
+    output = pipe_output("#{bin}/vint -", "let foo = \"bar\"", 1)
+    assert_match /Prefer single quoted strings/, output
   end
 end
