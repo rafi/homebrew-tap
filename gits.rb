@@ -20,7 +20,7 @@ class Gits < Formula
 
       # Install bash completion
       output = Utils.popen_read("#{bin}/gits completion 2>/dev/null")
-      (bash_completion/"gits").write output
+      (bash_completion/"gits-completion.bash").write output
 
       prefix.install_metafiles
     end

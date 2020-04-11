@@ -9,9 +9,7 @@ class WorkonPy < Formula
 
   def install
     (prefix/"bin").install "workon"
-
-    # Install bash completion
-    (bash_completion/"workon").install "workon-completion.bash"
+    bash_completion.install "workon-completion.bash"
   end
 
   test do
