@@ -5,8 +5,8 @@ class GitFame < Formula
   homepage "https://github.com/casperdcl/git-fame"
   head "https://github.com/casperdcl/git-fame.git"
   url "https://github.com/casperdcl/git-fame.git",
-      :tag => "v1.11.0",
-      :revision => "eb15381c12f47e1b2fc36eee5e612c5bf3170913"
+      :tag => "v1.12.0",
+      :revision => "82bf1c7d9e877676f6036d8da917440d4422fefe"
 
   depends_on "python"
 

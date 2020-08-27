@@ -3,34 +3,34 @@ class Tmuxp < Formula
 
   desc "tmux session manager. built on libtmux"
   homepage "https://tmuxp.git-pull.com/"
-  url "https://files.pythonhosted.org/packages/d8/97/7500aa25aa4ab80b67666fd5026e990bbe78cf6eff644d31483c7561ef94/tmuxp-1.4.2.tar.gz"
-  sha256 "b5895a6341729b4c712f03657c6d7e519bf0e32a8f8411dc28aee160c365f120"
+  url "https://files.pythonhosted.org/packages/20/ac/91b7a3286237b717d850fc09a8973ff9bb8ad678bf16aa0dc74b3b659289/tmuxp-1.5.5.tar.gz"
+  sha256 "371105eb69efc457de52fb7a6de0b431a0179c5b54e9ec78180746463153168f"
   head "https://github.com/tmux-python/tmuxp.git"
 
   depends_on "python"
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz"
+    url "https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz"
     sha256 "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz"
-    sha256 "f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b"
+    url "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz"
+    sha256 "d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"
   end
 
   resource "kaptan" do
-    url "https://files.pythonhosted.org/packages/52/1f/1faa2c65aabaf685725586fc2c19b3b8bc70d2aa0eea39d480d2e4a55077/kaptan-0.5.10.tar.gz"
+    url "https://files.pythonhosted.org/packages/94/64/f492edfcac55d4748014b5c9f9a90497325df7d97a678c5d56443f881b7a/kaptan-0.5.12.tar.gz"
     sha256 "44df200d030975650a3a832c13b48cafdeb1a237b23de181d6a2346107e39da3"
   end
 
   resource "libtmux" do
-    url "https://files.pythonhosted.org/packages/6b/70/dd9674764ec3a7e78e7bdba8b6ec812f44058418aea0aa1d4e02327e943f/libtmux-0.8.0.tar.gz"
-    sha256 "2b969b507c26d9db08b85be4808d75774b6418ecf5a0f61956f7a1da44519585"
+    url "https://files.pythonhosted.org/packages/17/4e/8ead5b24584c66c8f430ad695024f1fb37985d9119db925c5e5e083cd869/libtmux-0.8.3.tar.gz"
+    sha256 "2acd86617203bc966b125d016526fb40503411a2281b55d9d970a487dc6e065a"
   end
 
   resource "colorama" do
-    url "https://files.pythonhosted.org/packages/e6/76/257b53926889e2835355d74fec73d82662100135293e17d382e2b74d1669/colorama-0.3.9.tar.gz"
+    url "https://files.pythonhosted.org/packages/82/75/f2a4c0c94c85e2693c229142eb448840fba0f9230111faa889d1f541d12d/colorama-0.4.3.tar.gz"
     sha256 "48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1"
   end
 

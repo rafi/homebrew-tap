@@ -1,8 +1,8 @@
 class Timg < Formula
   desc "terminal image viewer with 24bit support"
   homepage "https://github.com/hzeller/timg"
-  url "https://github.com/hzeller/timg/archive/v0.9.5.tar.gz"
-  sha256 "285f51e95bed3d477b585db2998ef10b32c230d64d8015748e45f9a6e013ce48"
+  url "https://github.com/hzeller/timg/archive/v0.9.8.tar.gz"
+  sha256 "436e2c3b5f43e906786ca150d11e521281d558329a7bc00198fe30d6907ee8c4"
   head "https://github.com/hzeller/timg.git"
 
   depends_on "pkg-config" => :build
