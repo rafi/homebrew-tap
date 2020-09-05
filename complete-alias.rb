@@ -1,7 +1,8 @@
 class CompleteAlias < Formula
+  version "1.8.0"
   desc "Automagical Bash shell alias completion"
   homepage "https://github.com/cykerway/complete-alias"
-  url "https://github.com/cykerway/complete-alias/archive/1.8.0.tar.gz"
+  url "https://github.com/cykerway/complete-alias/archive/#{version}.tar.gz"
   sha256 "df3d1fb826e67f42793ff8ab1489c2b4059db03fbc9affd82dfd53d7d9079f9a"
   head "https://github.com/cykerway/complete-alias.git"
 

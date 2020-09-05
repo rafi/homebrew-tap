@@ -1,6 +1,7 @@
 class Tmuxp < Formula
   include Language::Python::Virtualenv
 
+  version "1.5.5"
   desc "tmux session manager. built on libtmux"
   homepage "https://tmuxp.git-pull.com/"
   url "https://files.pythonhosted.org/packages/20/ac/91b7a3286237b717d850fc09a8973ff9bb8ad678bf16aa0dc74b3b659289/tmuxp-1.5.5.tar.gz"

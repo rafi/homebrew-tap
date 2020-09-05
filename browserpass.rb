@@ -20,8 +20,8 @@ class Browserpass < Formula
   def install
     ENV["DESTDIR"] = ""
     ENV["PREFIX"] = prefix.to_s
-    ENV["BIN"] = "browserpass-darwin64"
 
+    inreplace "Makefile", "BIN = browserpass", "BIN = browserpass-darwin64"
     system "make", "configure"
     system "make", "install"
 

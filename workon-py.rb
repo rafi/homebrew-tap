@@ -1,7 +1,8 @@
 class WorkonPy < Formula
+  version "1.2.0"
   desc "Simple pipenv bash alternative, virtual-environment management helper"
   homepage "https://github.com/rafi/workon-py"
-  url "https://github.com/rafi/workon-py/archive/1.2.0.tar.gz"
+  url "https://github.com/rafi/workon-py/archive/#{version}.tar.gz"
   sha256 "634b7e1ca34775c5fb4669f1be7a8afe0aba97a9af5e36361eac51aedf45bcb7"
   head "https://github.com/rafi/workon-py.git"
 

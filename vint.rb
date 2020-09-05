@@ -1,11 +1,12 @@
 class Vint < Formula
   include Language::Python::Virtualenv
 
+  version "0.4a4"
   desc "Vim script lint implemented in python"
   homepage "https://github.com/Kuniwak/vint"
   head "https://github.com/Kuniwak/vint.git"
   url "https://github.com/Kuniwak/vint.git",
-      :tag => "v0.4a4",
+      :tag => "v#{version}",
       :revision => "d67d8d55e4436dca66f43a10406638a29154718a"
 
   depends_on "python"
