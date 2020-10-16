@@ -3,7 +3,7 @@ class Cassowary < Formula
   homepage "https://github.com/rogerwelin/cassowary"
   head "https://github.com/rogerwelin/cassowary.git"
   url "https://github.com/rogerwelin/cassowary.git",
-      :tag => "v0.4.0",
+      :tag => "v0.11.0",
       :revision => "aa7459b73d2fe6064775e30b26ee9b512ce1f50d"
 
   depends_on "go" => :build

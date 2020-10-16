@@ -3,8 +3,8 @@ class Image2ascii < Formula
   homepage "https://github.com/qeesung/image2ascii"
   head "https://github.com/qeesung/image2ascii.git"
   url "https://github.com/qeesung/image2ascii.git",
-      :tag => "v1.0.0",
-      :revision => "0f8461344d1b941a39404dfc93fca0c8a370e4da"
+      :tag => "v1.0.1",
+      :revision => "ea02edb8d9c87c5c62535bbc59d84bbafead03a2"
 
   depends_on "go" => :build
 

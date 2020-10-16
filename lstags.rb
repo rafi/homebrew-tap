@@ -1,10 +1,10 @@
 class Lstags < Formula
-  version "1.2.16"
+  version "1.2.18"
   desc "Manipulate Docker images across different registries"
   homepage "https://github.com/ivanilves/lstags"
   url "https://github.com/ivanilves/lstags.git",
       :tag => "v#{version}",
-      :revision => "8706a12f69c7d11225b224d15132cb6f2cceb2e3"
+      :revision => "0c0991034b31cd13ece883389b7ff72c378df22b"
 
   depends_on "go" => :build
 
