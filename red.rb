@@ -1,23 +1,18 @@
 class Red < Formula
   desc "Terminal log analysis tools"
   homepage "https://github.com/antonmedv/red"
-  head "https://github.com/antonmedv/red.git"
-  url "https://github.com/antonmedv/red.git",
-      :tag => "v0.0.0",
-      :revision => "4203e559f331009df04a3ca47820989c6c43e138"
+  url "https://github.com/antonmedv/red/archive/v0.0.0.tar.gz"
+  sha256 "aca0a535c2183e9e50c2603281b8672dfefa3a344fbc86281cb0eb2c24a4409b"
+  license "MIT"
+  head "https://github.com/antonmedv/red.git", branch: "master"
 
   depends_on "go" => :build
 
   def install
-    ENV["GOPATH"] = buildpath
-
-    (buildpath/"src/github.com/antonmedv/red").install buildpath.children
-    cd "src/github.com/antonmedv/red" do
-      system "go", "build", "-o", bin/"red"
-      prefix.install_metafiles
-    end
+    system "go", "build", *std_go_args
   end
 
   test do
+    system "#{bin}/red", "-help"
   end
 end

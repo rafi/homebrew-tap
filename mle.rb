@@ -1,10 +1,9 @@
 class Mle < Formula
   desc "Flexible terminal-based text editor"
   homepage "https://github.com/adsr/mle"
-  head "https://github.com/adsr/mle.git"
-  url "https://github.com/adsr/mle.git",
-      :tag => "v1.4.3",
-      :revision => "af07127e639664c34fe2ebf5d887a844f5f1129a"
+  url "https://github.com/adsr/mle/archive/v1.4.3.tar.gz"
+  license "Apache-2.0"
+  head "https://github.com/adsr/mle.git", branch: "master"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
