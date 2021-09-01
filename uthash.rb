@@ -1,10 +1,8 @@
 class Uthash < Formula
   desc "C macros for hash tables"
   homepage "https://github.com/troydhanson/uthash"
-  head "https://github.com/troydhanson/uthash.git"
-  url "https://github.com/troydhanson/uthash.git",
-      :tag => "v2.1.0",
-      :revision => "8b214aefcb81df86a7e5e0d4fa20e59a6c18bc02"
+  url "https://github.com/troydhanson/uthash/archive/v2.3.0.tar.gz"
+  head "https://github.com/troydhanson/uthash.git", branch: "master"
 
   def install
     include.install Dir["src/*.h"]

@@ -1,7 +1,7 @@
 class Fz < Formula
   desc "Adds tab completion for z jump around"
   homepage "https://github.com/changyuheng/fz"
-  head "https://github.com/changyuheng/fz.git"
+  head "https://github.com/changyuheng/fz.git", branch: "master"
 
   bottle :unneeded
 

@@ -5,6 +5,13 @@ class Browserpass < Formula
   homepage "https://github.com/browserpass/browserpass-native"
   url "https://github.com/browserpass/browserpass-native/releases/download/#{version}/browserpass-darwin64-#{version}.tar.gz"
   sha256 "97b9a9068a3c88fb1d52d42a1712e199da5865a4c6f8352b9fe3eae1ee86c746"
+  license "MPL-2.0"
+
+  # bottle do
+  #   root_url "https://github.com/Amar1729/homebrew-formulae/releases/download/browserpass-3.0.7"
+  #   cellar :any_skip_relocation
+  #   sha256 "0d1b3c9497047ee387e154df75da8d90af9327b80af35391aeb02811c01d6e7a" => :catalina
+  # end
 
   resource "testfile" do
     url "https://github.com/browserpass/browserpass-native/files/3062744/request.hex.txt"

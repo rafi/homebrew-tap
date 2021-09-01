@@ -1,20 +1,20 @@
 class WorkonPy < Formula
-  version "1.2.0"
   desc "Simple pipenv bash alternative, virtual-environment management helper"
   homepage "https://github.com/rafi/workon-py"
-  url "https://github.com/rafi/workon-py/archive/#{version}.tar.gz"
+  url "https://github.com/rafi/workon-py/archive/1.2.0.tar.gz"
   sha256 "634b7e1ca34775c5fb4669f1be7a8afe0aba97a9af5e36361eac51aedf45bcb7"
-  head "https://github.com/rafi/workon-py.git"
+  head "https://github.com/rafi/workon-py.git", branch: "master"
 
   bottle :unneeded
 
+  depends_on "bash-completion@2"
+
   def install
-    (prefix/"bin").install "workon"
+    bin.install "workon"
     bash_completion.install "workon-completion.bash"
   end
 
   test do
-    testcmd = "/bin/bash -c 'workon -h' 2>&1'"
-    assert_match "WORKON_VIRTUALENV", pipe_output(testcmd)
+    assert_match /WORKON_VIRTUALENV/m, pipe_output("workon -h 2>&1")
   end
 end

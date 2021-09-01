@@ -3,31 +3,31 @@ class GitFame < Formula
 
   desc "Pretty-print git repository collaborators sorted by contributions"
   homepage "https://github.com/casperdcl/git-fame"
-  head "https://github.com/casperdcl/git-fame.git"
-  url "https://github.com/casperdcl/git-fame.git",
-      :tag => "v1.12.2",
-      :revision => "0e80dbd4907109c6115a92feb1f654daf513ba94"
+  url "https://files.pythonhosted.org/packages/e0/32/9b257c9cc4f8ff7f9b6f146099ecd2c012d8f2b9043338e02251e1c32d2d/git-fame-1.15.0.tar.gz"
+  sha256 "00e7205cb885f486ec57bef2cf2b9d97a683b86563756557685f85ecfb907074"
+  license "MPL-2.0"
+  head "https://github.com/casperdcl/git-fame.git", branch: "master"
 
   depends_on "python"
 
   resource "tqdm" do
-    url "https://files.pythonhosted.org/packages/12/67/e736c012c6c8b4092dd54bb9bdd7737acf9a140a98c58b87c35363d0105d/tqdm-4.45.0.tar.gz"
-    sha256 "00339634a22c10a7a22476ee946bbde2dbe48d042ded784e4d88e0236eca5d81"
+    url "https://files.pythonhosted.org/packages/37/e5/1b54ef934d731576d0145bc8ae22da5b410f96922cec52b91cc29d3ff1b6/tqdm-4.62.2.tar.gz"
+    sha256 "a4d6d112e507ef98513ac119ead1159d286deab17dffedd96921412c2d236ff5"
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/64/c2/b80047c7ac2478f9501676c988a5411ed5572f35d1beff9cae07d321512c/PyYAML-5.3.1.tar.gz"
-    sha256 "b8eac752c5e14d3eca0e6dd9199cd627518cb5ec06add0de9d32baeee6fe645d"
+    url "https://files.pythonhosted.org/packages/a0/a4/d63f2d7597e1a4b55aa3b4d6c5b029991d3b824b5bd331af8d4ab1ed687d/PyYAML-5.4.1.tar.gz"
+    sha256 "607774cbba28732bfa802b54baa7484215f530991055bb562efbed5b2f20a45e"
   end
 
   resource "argopt" do
-    url "https://files.pythonhosted.org/packages/f1/92/bd312f86ad375259ed614b5f61858ef56a5f3c023731835d3fd99c1634fd/argopt-0.6.1.tar.gz"
-    sha256 "c8ca9cdeb6bf5e8d6b0fb6a6cd3c676210fd3ebacdabab57f5b95d1ed514f0af"
+    url "https://files.pythonhosted.org/packages/22/bf/527c5f49017645f36f40f369006febae597e42f2188f50c194d45ac22761/argopt-0.7.0.tar.gz"
+    sha256 "aa7ba8d58abed4f625138a1608d70a4f6bd80322c76d1aec47f43270e73c7a79"
   end
 
   resource "tabulate" do
-    url "https://files.pythonhosted.org/packages/57/6f/213d075ad03c84991d44e63b6516dd7d185091df5e1d02a660874f8f7e1e/tabulate-0.8.7.tar.gz"
-    sha256 "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"
+    url "https://files.pythonhosted.org/packages/ae/3d/9d7576d94007eaf3bb685acbaaec66ff4cdeb0b18f1bf1f17edbeebffb0a/tabulate-0.8.9.tar.gz"
+    sha256 "eb1d13f25760052e8931f2ef80aaf6045a6cceb47514db8beab24cded16f13a7"
   end
 
   def install

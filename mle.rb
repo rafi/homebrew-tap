@@ -24,7 +24,7 @@ class Mle < Formula
   test do
     assert_match /^mle version/, shell_output("#{bin}/mle -h", 0)
 
-    cmd = "#{bin}/mle -M 'test C-e space w o r l d enter' -p test 2<&1"
+    cmd = "#{bin}/mle -M 'test C-e space w o r l d enter' -p test 2>&1"
     assert_match /^hello world$/, pipe_output(cmd, "hello", 0)
   end
 end
