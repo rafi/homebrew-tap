@@ -6,8 +6,6 @@ class CompleteAlias < Formula
   license "GPL-3.0"
   head "https://github.com/cykerway/complete-alias.git", branch: "master"
 
-  bottle :unneeded
-
   depends_on "bash-completion@2"
 
   def install
