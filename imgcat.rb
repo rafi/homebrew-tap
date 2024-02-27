@@ -1,8 +1,8 @@
 class Imgcat < Formula
   desc "It's like cat, but for images."
   homepage "https://github.com/eddieantonio/imgcat"
-  url "https://github.com/eddieantonio/imgcat/releases/download/v2.5.0/imgcat-2.5.0.tar.gz"
-  sha256 "8f18e10464ed1426b29a5b11aee766a43db92be17ba0a17fd127dd9cf9fb544b"
+  url "https://github.com/eddieantonio/imgcat/releases/download/v2.6.0/imgcat-2.6.0.tar.gz"
+  sha256 "1e7e69670ad73e36ba1a9f0a09b6a787cf4e141dfe7885ae7ad77c293fb999a6"
   license "ISC"
   head "https://github.com/eddieantonio/imgcat.git", branch: "master"
 

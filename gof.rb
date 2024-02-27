@@ -1,8 +1,8 @@
 class Gof < Formula
   desc "fuzzy file finder with vim api"
   homepage "https://github.com/mattn/gof"
-  url "https://github.com/mattn/gof/archive/v0.0.10.tar.gz"
-  sha256 "a47d17ad6c74a753f83e3b1c8ce8d2b84997092ff4678f80500bc1ceea9bf836"
+  url "https://github.com/mattn/gof/archive/v0.0.13.tar.gz"
+  sha256 "4e73d4edac96389ef8ad91fbf1d3b5172b1119e8fcbd0d5cf69dbe3d551e563d"
   license "MIT"
   head "https://github.com/mattn/gof.git", branch: "master"
 

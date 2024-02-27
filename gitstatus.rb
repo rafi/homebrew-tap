@@ -1,8 +1,8 @@
 class Gitstatus < Formula
   desc "Git status for Bash/Zsh prompt"
   homepage "https://github.com/romkatv/gitstatus"
-  url "https://github.com/romkatv/gitstatus/archive/v1.5.2.tar.gz"
-  sha256 "8eb904b46876c6f8cf5314502f7cb5a25fa1ec220154ce883a1189760da99b98"
+  url "https://github.com/romkatv/gitstatus/archive/v1.5.4.tar.gz"
+  sha256 "23215748fe413b5537e7ce71ea9eae2075bfa43ff0fbe0ed451d1688f6d5c415"
   license "GPL-3.0"
   head "https://github.com/romkatv/gitstatus.git", branch: "master"
 

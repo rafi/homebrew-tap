@@ -1,8 +1,8 @@
 class Txeh < Formula
   desc "Utilty for /etc/hosts management"
   homepage "https://github.com/txn2/txeh"
-  url "https://github.com/txn2/txeh/archive/v1.3.0.tar.gz"
-  sha256 "c9495f445e7eda26f54d018660fc5b872e9257a8f5fa28c5e508df6d201cf84b"
+  url "https://github.com/txn2/txeh/archive/v1.5.4.tar.gz"
+  sha256 "5b442c66531c2cc1e75569ea3754c2fe7328d982481c13c8dc1f80f096d6c823"
   license "Apache-2.0"
   head "https://github.com/txn2/txeh.git", branch: "master"
 
