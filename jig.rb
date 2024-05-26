@@ -2,8 +2,8 @@ class Jig < Formula
   desc "tmux launcher"
   homepage "https://github.com/rafi/jig"
   url "https://github.com/rafi/jig.git",
-    tag: "v0.1.1",
-    revision: "cabf192279d3d58466ff87c7e758ce472153b57f"
+    tag: "v0.1.2",
+    revision: "e93b4fd33139db8caf929dda7c7c72cf28a48f77"
   head "https://github.com/rafi/jig.git", branch: "next"
 
   depends_on "go"   => :build
