@@ -2,8 +2,8 @@ class Gits < Formula
   desc "a fast cli git manager for multiple repositories"
   homepage "https://github.com/rafi/gits"
   url "https://github.com/rafi/gits.git",
-    tag: "v0.10.0",
-    revision: "18211e5e1f90b1c1333c66bf566be493f4a6f6f7"
+    tag: "v0.11.0",
+    revision: "2394cd23b9db7aa0d55e757c7d46e93ec99e30cb"
   head "https://github.com/rafi/gits.git", branch: "next"
 
   depends_on "go" => :build
