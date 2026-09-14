@@ -2,11 +2,12 @@ class Gits < Formula
   desc "a fast cli git manager for multiple repositories"
   homepage "https://github.com/rafi/gits"
   url "https://github.com/rafi/gits.git",
-    tag: "v0.11.2",
-    revision: "4c0c7cb7f381156539176305f2c679bd7dbbbb78"
-  head "https://github.com/rafi/gits.git", branch: "next"
+    tag: "v0.25.0",
+    revision: "57db634a338d9790f40e0addaae531b08e40cd58"
+  head "https://github.com/rafi/gits.git", branch: "master"
 
   depends_on "go" => :build
+  depends_on "just" => :build
 
   uses_from_macos "ncurses"
 
@@ -17,7 +18,7 @@ class Gits < Formula
     arch = Hardware::CPU.intel? ? "amd64" : Hardware::CPU.arch.to_s
     os = OS.kernel_name.downcase
 
-    system "make", "bin/release/gits-#{os}-#{arch}"
+    system "just", "build", os, arch
     bin.install "bin/release/gits-#{os}-#{arch}" => "gits"
 
     generate_completions_from_executable(bin/"gits", "completion")
